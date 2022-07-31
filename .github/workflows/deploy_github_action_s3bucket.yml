@@ -46,9 +46,7 @@ jobs:
 
     - name: Install and Build React App
       working-directory: ./frontend
-      run: |
-        npm install
-        npm run build
+      run: npm run build
 
     - name: Deploy Reactapp to S3Bucket
       working-directory: ./frontend
