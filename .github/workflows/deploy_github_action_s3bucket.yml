@@ -46,7 +46,10 @@ jobs:
 
     - name: Install and Build React App
       working-directory: ./frontend
-      run: sudo npm run build
+      run: |
+        chmod +x node_modules/.bin/react-scripts
+        npm install
+        npm run build
 
     - name: Deploy Reactapp to S3Bucket
       working-directory: ./frontend
