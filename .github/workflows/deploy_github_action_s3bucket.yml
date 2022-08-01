@@ -47,7 +47,6 @@ jobs:
     - name: Install and Build React App
       working-directory: ./frontend
       run: |
-        chmod +x node_modules/.bin/react-scripts
         npm install
         npm run build
 
